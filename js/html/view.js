@@ -26,6 +26,10 @@ window.onload = function() {
   clock();  
     function clock() {
     var now = new Date();
+    var weekday = new Array('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday');
+    var dayOfWeek = weekday[now.getDay()];
+    var months = new Array('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'),
+    curMonth = months[now.getMonth()];
     var TwentyFourHour = now.getHours();
     var hour = now.getHours();
     var min = now.getMinutes();
@@ -46,7 +50,7 @@ window.onload = function() {
     if(TwentyFourHour < 12) {
        mid = 'am';
     }     
-  document.getElementById('currentTime').innerHTML =     hour+':'+min+':'+sec +' '+mid ;
+  document.getElementById('currentTime').innerHTML = weekday+' '+curMonth+' '+now.getDate()+', '+hour+':'+min+':'+sec +' '+mid ;
     setTimeout(clock, 1000);
     }
 }
