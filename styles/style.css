@@ -23,6 +23,11 @@
   justify-content: left;
 }
 
+.searchbox {
+  width: 75%;
+}
+
+
 .bookmark-link:hover ~ .bookmark-link-edit-button,
 .category-title:hover ~ .category-name-edit-button {
   visibility: visible;

@@ -60,6 +60,7 @@ export default class SearchBar {
     form.setAttribute("action", this.searchEngineUrl);
     form.setAttribute("method", "get");
     form.setAttribute("autocomplete", "off");
+    form.setAttribute("class","searchbox");
     return form;
   }
 
