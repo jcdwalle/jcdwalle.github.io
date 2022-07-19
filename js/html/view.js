@@ -39,7 +39,7 @@ window.onload = function() {
       min = "0" + min;
     }
     if (sec < 10) {
-      min = "0" + min;
+      sec = "0" + sec;
     }
     if (hour > 12) {
       hour = hour - 12;
