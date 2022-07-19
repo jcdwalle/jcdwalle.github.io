@@ -58,7 +58,7 @@ export default class Tree {
     const clock = document.createElement("h1");
     clock.setAttribute("id", "clock");
     clock.innerHTML = "test";
-    print("test");
+    alert("test");
     prompt.appendChild(clock);
     prompt.classList.add("prompt");
     prompt.innerHTML = "~ ";
