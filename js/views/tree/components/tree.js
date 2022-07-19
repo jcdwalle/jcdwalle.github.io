@@ -61,7 +61,7 @@ export default class Tree {
     clock.id = "clock";
     prompt.appendChild(clock);
 
-    prompt.innerHTML = "~ ";
+    prompt.innerHTML += "\n~ ";
     const symSpan = document.createElement("span");
     symSpan.innerHTML = "λ ";
     prompt.appendChild(symSpan);
