@@ -37,10 +37,10 @@ export default class Tree {
 
   renderHtml() {
     this.root = this.rootHtml();
-
     this.titlePrompt = this.titlePromptHtml();
     this.root.appendChild(this.titlePrompt);
-
+    this.titlePrompt = this.titlePromptHtml();
+    this.root.appendChild(this.titlePrompt);
     this.bookmarkRow = this.bookmarkRowHtml();
     this.root.appendChild(this.bookmarkRow);
 
