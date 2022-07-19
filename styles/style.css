@@ -507,6 +507,10 @@ a {
   outline: none;
 }
 
+#clock {
+  color: var(--color12);
+}
+
 a:hover {
   color: var(--color12);
   /*
