@@ -233,8 +233,7 @@ html {
 }
 
 body {
-  background-color: var(--background);
-  background:url(mugi.png) fixed no-repeat bottom right;
+  background: var(--background);
   margin: 0;
   padding: 0;
 }
