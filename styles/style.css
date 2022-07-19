@@ -1,11 +1,11 @@
 @import url("./colors.css");
 @font-face {
-  font-family: "Roboto Mono";
-  src: url("./Hack.ttf");
+  font-family: "Liga SFMono Nerd Font";
+  src: url("./LigaSFMonoNerdFont-Regular.otf");
 }
 
 :root {
-  --font: "Roboto Mono";
+  --font: "Liga SFMono Nerd Font";
   /* --background: var(--background); */
   /* --foreground: #fffffe; */
   /* --pink: #e53170; */
