@@ -39,8 +39,6 @@ export default class Tree {
     this.root = this.rootHtml();
     this.titlePrompt = this.titlePromptHtml();
     this.root.appendChild(this.titlePrompt);
-    this.titlePrompt = this.titlePromptHtml();
-    this.root.appendChild(this.titlePrompt);
     this.bookmarkRow = this.bookmarkRowHtml();
     this.root.appendChild(this.bookmarkRow);
 
@@ -57,6 +55,9 @@ export default class Tree {
 
   titlePromptHtml() {
     const prompt = document.createElement("div");
+    const clock = document.createElement("p");
+    clock.setAttribute("id", "clock");
+    prompt.appendChild(clock);
     prompt.classList.add("prompt");
     prompt.innerHTML = "~ ";
     const symSpan = document.createElement("span");
