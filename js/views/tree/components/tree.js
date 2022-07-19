@@ -55,16 +55,17 @@ export default class Tree {
 
   titlePromptHtml() {
     const prompt = document.createElement("div");
+    const clock = document.createElement("span");
+    clock.innerHTML = "test";
+    clock.id = "clock";
+    prompt.appendChild(clock);
     prompt.classList.add("prompt");
     prompt.innerHTML = "~ ";
     const symSpan = document.createElement("span");
     symSpan.innerHTML = "λ ";
     prompt.appendChild(symSpan);
     prompt.innerHTML += " tree";
-    const clock = document.createElement("span");
-    clock.innerHTML = "test";
-    clock.id = "clock";
-    prompt.appendChild(clock);
+    
     return prompt;
   }
 
