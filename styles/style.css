@@ -1,11 +1,7 @@
 @import url("./colors.css");
-@font-face {
-  font-family: "Liga SFMono Nerd Font";
-  src: url("./LigaSFMonoNerdFont-Regular.otf") format("opentype");
-}
 
 :root {
-  --font: "Liga SFMono Nerd Font" ;
+  --font: "Liga SFMono Nerd Font";
   /* --background: var(--background); */
   /* --foreground: #fffffe; */
   /* --pink: #e53170; */
@@ -14,7 +10,6 @@
   /* --branch: 1px solid #a7a9be; */
   --branch: 1px solid var(--color12);
 }
-
 /* ====================================================== */
 /* ===================== Animations ===================== */
 /* ====================================================== */
@@ -416,7 +411,7 @@ button:focus {
 
 .container {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
