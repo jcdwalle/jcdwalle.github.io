@@ -57,7 +57,7 @@ export default class Tree {
     const prompt = document.createElement("div");
     prompt.classList.add("prompt");
 
-    prompt.innerHTML += "<br>test2</br>~ ";
+    prompt.innerHTML += "<br><h1 id=\"currentTime\"></h1></br>~ ";
     const symSpan = document.createElement("span");
     symSpan.innerHTML = "λ ";
     prompt.appendChild(symSpan);
